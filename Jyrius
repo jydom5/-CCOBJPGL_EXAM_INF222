@@ -1,0 +1,94 @@
+package Tourist;
+
+ 
+import Locations.*;
+
+public class Jyrius implements Tourist {
+	
+	static int Money = 1000;
+	
+	
+	public void visit() {
+		System.out.print("Have fun in my rest day");
+	}
+	
+	public void visit (Boracay boracay) {
+		System.out.println("My amount of money is" + getMoney());
+		
+		if ( Money > Boracay.airFare) {
+			System.out.println("Bakasyon Tayo" );
+            Money -= boracay.airFare;
+            
+		}else{
+			System.out.println("I have no budget left");
+		}
+		
+		checkMoney();
+	}
+	 public void visit(Davao davao) {
+	        if(Money >davao.airFare){
+	            System.out.println("tara davao!");
+	            Money -= davao.airFare;
+	        }else{
+	        	System.out.println("wala na Money");
+	        	
+	 }
+	        
+	   checkMoney();
+	 }
+	 
+	 public void visit(Bohol bohol) {
+		 if(budget >bohol.airFare) {
+			 System.out.println("let's go bohol!");
+			 Money -= bohol.airFare;
+		 }else{
+			 System.out.println("broke");
+		 }
+		 
+		 checkMoney();
+	}
+	 
+	 public void visit(Batanes batanes) {
+	        if(Money >batanes.airFare){
+	            System.out.println("tara lets batanes! ");
+	            Money -= batanes.airFare;
+	        }else{
+	            System.out.println("waldas ang Money");
+	        }
+	        
+	        checkMoney();
+	 }
+	 
+	 public void visit(Bacolod bacolod) {
+	        if(Money >bacolod.airFare){
+	            System.out.println("bacolod here we go! ");
+	            Money -= bacolod.airFare;
+	        }else{
+	            System.out.println("adventure pa more");
+	        }
+	        
+	        checkMoney();
+	 }
+	 
+	 public void visit(Siargao siargao) {
+	        if(Money >siargao.airFare){
+	            System.out.println("tara lets siargao! ");
+	            Money -= siargao.airFare;
+	        }else{
+	            System.out.println("waldas ang Money");    
+	    }
+
+	        checkMoney();
+	        
+	 }
+	 
+	 public void checkBudget() {
+	        System.out.println("my Money is " + Money);
+	    }
+
+	    public static int getBudget() {
+	        return Money;
+	    }
+
+
+	}
