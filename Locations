@@ -1,0 +1,111 @@
+package Locations;
+
+import Tourist.Tourist;
+
+public class Boracay implements Locations {
+
+    public int airFare = 200;
+
+
+    public void accept(Tourist tourist) {
+        tourist.visit(this);
+    }
+
+
+}
+
+package Locations;
+
+import Tourist.Tourist;
+
+public class Davao implements Locations {
+
+    public int airFare = 200;
+
+
+    public void accept(Tourist tourist) {
+        tourist.visit(this);
+    }
+
+}
+
+
+package Locations;
+
+import Tourist.Tourist;
+
+public class Bohol implements Locations {
+
+    public int airFare = 200;
+
+
+    public void accept(Tourist tourist) {
+        tourist.visit(this);
+    }
+
+}
+
+
+
+package Locations;
+
+
+
+import Tourist.Tourist;
+
+public interface Locations {
+
+    int airFare = 1000;
+
+    void accept(Tourist tourist);
+}
+
+
+
+package Locations;
+
+import Tourist.Tourist;
+
+public class Batanes implements Locations {
+
+    public int airFare = 200;
+
+
+    public void accept(Tourist tourist) {
+        tourist.visit(this);
+    }
+}
+
+
+
+package Locations;
+
+import Tourist.Tourist;
+
+public class Bacolod implements Locations {
+
+    public int airFare = 200;
+
+
+    public void accept(Tourist tourist) {
+        tourist.visit(this);
+    }
+
+}
+
+
+
+package Locations;
+
+import Tourist.Tourist;
+
+public class Siargao implements Locations {
+
+    public int airFare = 200;
+
+
+    public void accept(Tourist tourist) {
+        tourist.visit(this);
+    }
+
+}
