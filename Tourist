@@ -1,0 +1,36 @@
+package Tourist;
+
+import Locations.Boracay;
+import Locations.Davao;
+import Locations.Bohol;
+import Locations.Locations;
+import Locations.Batanes;
+import Locations.Bacolod;
+import Locations.Siargao;
+
+public interface Tourist {
+
+    int budget = 1000;
+
+    void visit();
+
+    void visit(Boracay boracay);
+
+    void visit(Davao davao);
+
+    void visit(Bohol bohol);
+
+    void visit(Batanes batanes);
+
+    void visit(Bacolod bacolod);
+
+    void visit(Siargao siargao);
+
+    default void visit(Locations locations) {
+        System.out.println("Arrived on a location");
+    };
+
+    void checkMoney();
+
+
+}
